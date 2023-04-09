@@ -1,0 +1,20 @@
+{
+  "name": "zhmmod-generator",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230404.0",
+    "typescript": "^5.0.4",
+    "wrangler": "2.14.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler publish"
+  },
+  "dependencies": {
+    "isomorphic-git": "^1.23.0",
+    "itty-router": "^3.0.12",
+    "jszip": "^3.10.1",
+    "memfs": "^3.5.0"
+  }
+}
