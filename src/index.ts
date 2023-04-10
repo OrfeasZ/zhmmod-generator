@@ -101,7 +101,7 @@ const generateModZip = async (
 					{
 						"type": "dll",
 						"exe": `${gameInstallPath}\\Retail\\HITMAN3.exe`,
-						"cwd": `${gameInstallPath}`,
+						"currentDir": `${gameInstallPath}`,
 						"args": [
 							"-EpicPortal",
 							`-epicuserid=${epicUserId}`
@@ -131,7 +131,7 @@ const generateModZip = async (
 					{
 						"type": "dll",
 						"exe": `${gameInstallPath}\\Retail\\HITMAN3.exe`,
-						"cwd": `${gameInstallPath}`,
+						"currentDir": `${gameInstallPath}`,
 						"args": [],
 						"project": "CMakeLists.txt",
 						"projectTarget": `${modName}.dll (Install)`,
