@@ -160,6 +160,9 @@ const generateModZip = async (
 
 	await git.commit({ fs, dir: '/', message: `Create ${modName} files`, ...config });
 
+	// Remove the origin remote.
+	await git.deleteRemote({ fs, dir: '/', remote: 'origin' });
+
 	// Create a ZIP file containing the repository
 	const zip = new JSZip();
 
